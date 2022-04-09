@@ -2,3 +2,29 @@ body {
   background-color: rgb(253, 242, 228);
   text-align: center;
 }
+
+.square{
+  background-color: rgb(148, 228, 51);
+  text-align: center;
+  width: 60px;
+  display: inline-block;
+  padding: 40px;
+  font-size: 50px;
+  margin: 5px;
+  cursor: pointer;
+  color: #eee;
+}
+
+.jogador, .vencedor {
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+button {
+  margin-top: 10px;
+  width: 100px;
+  height: 30px;
+  background: #eee;
+  border-radius: 5px;
+  cursor: pointer;
+}
