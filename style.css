@@ -63,3 +63,42 @@ button {
   border-radius: 15px;
   cursor: pointer;
 }
+
+@media (max-width: 400px) {
+  body{
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 400px) {
+  h1{
+    width: 270px;
+    margin: auto;
+    background: var(--pink);
+    color: var(--white);
+    border-radius: 50px;
+  }
+}
+
+@media (max-width: 400px) {
+  .player, .winner {
+    font-size: 30px;
+    width: 270px;
+    margin: auto;
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 400px) {
+  .square{    
+    background: var(--pink);
+    text-align: center;
+    display: inline-block;
+    padding: 25px;
+    font-size: 50px;
+    margin: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: var(--white);
+  }
+}
