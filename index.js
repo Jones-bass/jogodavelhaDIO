@@ -1,11 +1,13 @@
 var player, winner = null; 
 var selectPlayer = document.getElementById('select-player');
 var selectWinner = document.getElementById('select-winner');
-var squares = document.getElementsByClassName('square');
 
 changePlayer('X')
 
 function squareHash(id) {
+  if(winner !== null) {
+    return;
+  }
 
   var square = document.getElementById(id);
   if(square.innerHTML !== '-') { // Condição para que só haja uma letra
@@ -13,7 +15,7 @@ function squareHash(id) {
   }
  
   square.innerHTML = player;
-  square.style.color = '#000';
+  square.style.color = 'var(--white)';
 
   if(player === 'X') { // Condição para para a escolha da letra de cada jogador
     player = 'O';
@@ -102,9 +104,12 @@ function changerWinner(square) {
 }
 
 function changeColor(square1, square2, square3) {
-  square1.style.background = '#0f0';
-  square2.style.background = '#0f0';
-  square3.style.background = '#0f0';
+  square1.style.background = 'var(--green)';
+  square2.style.background = 'var(--green)';
+  square3.style.background = 'var(--green)';
+  square1.style.color = 'var(--pink)';
+  square2.style.color = 'var(--pink)';
+  square3.style.color = 'var(--pink)';
 }
 
 function checkSequence(square1, square2, square3) {
@@ -114,4 +119,17 @@ function checkSequence(square1, square2, square3) {
     checking = true;
   }
   return checking;
+}
+
+function restartButton() {
+  winner = null;
+  selectWinner.innerHTML = ' ';
+
+  for (var i = 1; i <= 9; i++) {
+    var square = document.getElementById(i);
+    square.style.background = 'var(--pink)';
+    square.style.color = 'var(--white)';
+    square.innerHTML = '-'; 
+  }
+  changePlayer(x)
 }

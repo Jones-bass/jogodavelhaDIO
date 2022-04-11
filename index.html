@@ -11,9 +11,11 @@
 
 <body>
 
-  <h1>Hash</h1>
+  
+  <h1>Jogo da Velha</h1>
 
-  <div>
+
+  <div class="container">
     <div id="1" class="square" onclick="squareHash(this.id)">-</div>
     <div id="2" class="square" onclick="squareHash(this.id)">-</div>
     <div id="3" class="square" onclick="squareHash(this.id)">-</div>
@@ -33,7 +35,7 @@
 
   <div class="player">
     <label>
-      Player:
+      Jogador:
     </label>
     <label id="select-player">
     </label>
@@ -41,14 +43,14 @@
 
   <div class="winner">
     <label>
-      Winner:
+      Vencedor:
     </label>
     <label id="select-winner">
     </label>
   </div>
 
   <div>
-    <button>
+    <button onclick="restartButton()">
       Restart
     </button>
   </div>
