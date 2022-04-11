@@ -4,7 +4,7 @@ body {
 }
 
 .square{
-  background-color: rgb(148, 228, 51);
+  background-color: rgb(228, 51, 175);
   text-align: center;
   width: 60px;
   display: inline-block;
@@ -15,7 +15,7 @@ body {
   color: #eee;
 }
 
-.jogador, .vencedor {
+.player, .winner {
   font-size: 30px;
   margin-top: 10px;
 }
