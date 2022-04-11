@@ -66,22 +66,24 @@ button {
 
 @media (max-width: 512px) {
   body{
-    margin-top: 50px;
+    margin-top: 200px;
+    height: 700px;
   }
 }
 
 @media (max-width: 512px) {
   h1{
-    width: 200px;
+    width: 350px;
     margin: auto;
-    border-radius: 10px;
+    font-size: 30px;
+
   }
 }
 
 @media (max-width: 512px) {
   .player, .winner {
-    font-size: 30px;
-    width: 170px;
+    font-size: 20px;
+    width: 350px;
     margin: auto;
     margin-top: 5px;
   }
@@ -93,7 +95,7 @@ button {
     text-align: center;
     display: inline-block;
     padding: 25px;
-    font-size: 10px;
+    font-size: 30px;
     margin: 5px;
     border-radius: 20px;
     cursor: pointer;
