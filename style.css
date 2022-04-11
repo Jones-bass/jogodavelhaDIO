@@ -64,13 +64,13 @@ button {
   cursor: pointer;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 392px) {
   body{
     margin-top: 50px;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 392px) {
   h1{
     width: 270px;
     margin: auto;
@@ -80,7 +80,7 @@ button {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 392px) {
   .player, .winner {
     font-size: 30px;
     width: 270px;
@@ -89,7 +89,7 @@ button {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 392px) {
   .square{    
     background: var(--pink);
     text-align: center;
